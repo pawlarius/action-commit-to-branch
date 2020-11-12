@@ -16,6 +16,7 @@ EOF
 }
 
 git_setup
+git fetch origin master
 git fetch origin "$INPUT_BRANCH"
 git checkout master
-git push -u origin master:"${INPUT_BRANCH}"
+git push origin master:"${INPUT_BRANCH}"
